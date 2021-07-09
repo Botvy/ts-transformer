@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 declare global {
-    interface Window {
-        React: typeof React;
-    }
+  interface Window {
+    React: typeof React;
+  }
 }
