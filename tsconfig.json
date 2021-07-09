@@ -2,6 +2,7 @@
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
+        "jsx": "react",
         "outDir": "./dist/",
         "rootDir": "./src/",
         "lib": [
@@ -11,9 +12,11 @@
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
-    },
-    "exclude": [
-        "./example/"
-    ]
+        "forceConsistentCasingInFileNames": true,
+        "plugins": [
+            {
+                "transform": "./src/transformer.ts"
+            }
+        ]
+    }
 }
